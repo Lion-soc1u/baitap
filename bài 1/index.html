@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lấy và Gửi Dữ Liệu</title>
+  <style>
+    /* Bạn có thể dùng file CSS ngoài nếu muốn */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      margin-top: 16px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) { 
+      /* chọn các hàng có vị trí chẵn */
+      background-color: #fafafa;
+    }
+
+    tr:hover {
+      background-color: #e6f7ff;
+    }
+
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Danh sách người dùng</h2>
+
+  <!-- Nút kích hoạt việc gọi API -->
+  <button onclick="layVaGuiDuLieu()">Lấy dữ liệu</button>
+
+  <!-- Đây là nơi bảng sẽ được render bằng JavaScript -->
+  <div id="user-list"></div>
+
+  <!-- Script xử lý việc lấy dữ liệu và tạo bảng -->
+  <script src="script.js"></script>
+
+</body>
+</html>

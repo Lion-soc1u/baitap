@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Gửi Dữ Liệu AJAX</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2 style="text-align: center;">Liên hệ với chúng tôi</h2>
+
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Họ và tên" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Nội dung" rows="4" required></textarea>
+    <button type="submit">Gửi</button>
+  </form>
+
+  <div id="response"></div>
+
+  <!-- 👉 Kết nối file JavaScript nằm ngoài -->
+  <script src="script.js"></script>
+</body>
+</html>
