@@ -30,8 +30,8 @@ form.addEventListener("submit", async (e) => {
     console.log(" Nội dung phản hồi JSON:", data);
 
     responseBox.textContent =
-      "📦 Phản hồi từ server:\n" + JSON.stringify(data, null, 2);
+      " Phản hồi từ server:\n" + JSON.stringify(data, null, 2);
   } catch (error) {
-    responseBox.textContent = "❌ Đã xảy ra lỗi: " + error;
+    responseBox.textContent = "Đã xảy ra lỗi: " + error;
   }
 });
